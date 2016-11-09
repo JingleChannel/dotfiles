@@ -84,3 +84,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias nisd="npm install --save-dev"
+alias nis="npm install --save"
+
