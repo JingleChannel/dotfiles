@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.yarn/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/alexander/.oh-my-zsh
@@ -88,3 +88,6 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 alias vimconfig="vim ~/.vimrc"
 alias nisd="npm install --save-dev"
 alias nis="npm install --save"
+alias yad="yarn add --dev"
+alias yap="yarn add --peer"
+alias yao="yarn add --optional"
