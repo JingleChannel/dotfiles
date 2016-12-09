@@ -1,6 +1,4 @@
-" Maintainer:	Alexander <@elexdev>
-" Last change:	2016 December 05
-"
+" Maintainer: @elexdev
 " To use it, copy it to ~/.vimrc
 
 " When started as "evim", evim.vim will already have done these settings.
@@ -94,3 +92,6 @@ if has('langmap') && exists('+langnoremap')
   " compatible).
   set langnoremap
 endif
+
+" stuff
+colorscheme base16-oceanicnext
