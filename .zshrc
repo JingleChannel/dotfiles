@@ -81,7 +81,6 @@ fi
 # For a full list of active aliases, run `alias`.
 alias zshrc="vim ~/.zshrc"
 alias vimrc="vim ~/.vimrc"
-alias yarnD="yarn add --dev"
 
 # brew cask completions
 fpath=(/usr/local/share/zsh-completions $fpath)

@@ -1,5 +1,4 @@
-" Maintainer: @elexdev
-" To use it, copy it to ~/.vimrc
+" To use it, symlink with ~/.vimrc
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
