@@ -4,6 +4,7 @@
 # plugins, and themes.
 # For a full list of active aliases, run `alias`.
 alias oimg="open -a ImageOptim ."
+alias y="yarn"
 alias yb="yarn bootstrap"
 alias ys="yarn start"
 alias yt="yarn test"
