@@ -8,6 +8,7 @@ alias bl="brew leaves"
 alias bcl="brew cask list"
 alias buc="brew upgrade && brew cask upgrade && brew cleanup"
 alias gc-="git checkout -"
+alias gl="git pull --rebase"
 # Install global packages with every node version your are using with nvm.
 alias nin="nvm install node --reinstall-packages-from=node"
 # Usage `nrp 9`
