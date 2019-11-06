@@ -8,12 +8,6 @@ export ZSH=$HOME/.oh-my-zsh
 # Switch CL Tools to english (i.e. git)
 export LC_ALL=en_US.UTF-8
 
-# NVM
-# brew install nvm
-# Create NVM's working directory if it doesn't exist: mkdir ~/.nvm
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
