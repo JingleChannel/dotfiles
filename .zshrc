@@ -1,12 +1,12 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/bin:$PATH
+# export PATH=$HOME/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
 # Switch CL Tools to english (i.e. git)
-export LC_ALL=en_US.UTF-8
+# export LC_ALL=en_US.UTF-8
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -56,7 +56,8 @@ HIST_STAMPS="dd.mm.yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(brew docker extract common-aliases git kubectl last-working-dir osx npm yarn z zsh-syntax-highlighting)
-plugins=(brew common-aliases extract git last-working-dir osx z)
+# plugins=(brew common-aliases extract git last-working-dir osx z zsh-syntax-highlighting)
+plugins=(brew common-aliases git last-working-dir osx z zsh-syntax-highlighting)
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
