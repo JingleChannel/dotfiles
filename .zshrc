@@ -56,6 +56,10 @@ HIST_STAMPS="dd.mm.yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(brew docker extract common-aliases git kubectl last-working-dir osx npm yarn z)
+
+# first install some plugins
+# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 plugins=(brew common-aliases git last-working-dir osx yarn z zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
