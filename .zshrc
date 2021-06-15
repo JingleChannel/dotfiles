@@ -65,6 +65,13 @@ plugins=(brew common-aliases git last-working-dir osx yarn z zsh-autosuggestions
 # User configuration
 source $HOME/git/dotfiles/env.sh
 
+# zsh autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# zsh completions
+autoload -Uz compinit
+compinit
+
 # brew cask completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
