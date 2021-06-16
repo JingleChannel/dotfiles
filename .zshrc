@@ -69,8 +69,12 @@ source $HOME/git/dotfiles/env.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # zsh completions
-autoload -Uz compinit
-compinit
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
 
 # brew cask completions
 fpath=(/usr/local/share/zsh-completions $fpath)
