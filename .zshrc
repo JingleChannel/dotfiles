@@ -63,7 +63,7 @@ HIST_STAMPS="dd.mm.yyyy"
 plugins=(brew common-aliases git last-working-dir osx yarn z zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
-source $HOME/Code/dotfiles/env.sh
+source $HOME/git/dotfiles/env.sh
 
 # zsh autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -86,6 +86,6 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliase, run `alias`.
-source $HOME/Code/dotfiles/alias.sh
+source $HOME/git/dotfiles/alias.sh
 
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
