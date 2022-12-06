@@ -1,16 +1,16 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-# export PATH=$HOME/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="$HOME/.oh-my-zsh"
 
 # Switch CL Tools to english (i.e. git)
 # export LC_ALL=en_US.UTF-8
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 # ZSH_THEME="agnoster"
 
@@ -58,16 +58,13 @@ HIST_STAMPS="dd.mm.yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(brew docker extract common-aliases git kubectl last-working-dir macos npm yarn z)
 
-# first install some plugins
+# first install the plugins
 # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 plugins=(brew common-aliases git last-working-dir macos yarn z zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 source $HOME/git/dotfiles/env.sh
-
-# zsh autosuggestions
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # zsh completions
 if type brew &>/dev/null; then
