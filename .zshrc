@@ -66,17 +66,6 @@ plugins=(brew common-aliases git last-working-dir macos yarn z zsh-autosuggestio
 # User configuration
 source $HOME/git/dotfiles/env.sh
 
-# zsh completions
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-
-  autoload -Uz compinit
-  compinit
-fi
-
-# brew cask completions
-fpath=(/usr/local/share/zsh-completions $fpath)
-
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
@@ -86,12 +75,10 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliase, run `alias`.
 source $HOME/git/dotfiles/alias.sh
 
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 # NVM
-export NVM_DIR="$HOME/.nvm"
-    [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
-    [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # place this after nvm initialization!
 autoload -U add-zsh-hook
