@@ -61,7 +61,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # first install the plugins
 # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-plugins=(brew common-aliases git last-working-dir macos yarn z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(brew common-aliases git last-working-dir macos nvm yarn z zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 source $HOME/git/dotfiles/env.sh
