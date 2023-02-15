@@ -1,6 +1,8 @@
 #!/bin/zsh
 
 alias buc="brew upgrade && brew upgrade --cask && brew cleanup"
+alias up="buc && softwareupdate --install --all"
+
 alias gc-="git checkout -"
 alias gl="git pull --rebase"
 alias gcd="git checkout develop"
