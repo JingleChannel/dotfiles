@@ -93,4 +93,3 @@ if has('langmap') && exists('+langnoremap')
 endif
 
 " stuff
-colorscheme base16-oceanicnext
