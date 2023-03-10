@@ -5,6 +5,7 @@ alias up="buc && softwareupdate --install --all"
 
 alias gc-="git checkout -"
 alias gl="git pull --rebase"
+alias gs="git switch"
 alias gcd="git checkout develop"
 alias grd="git checkout develop && git pull --rebase && git checkout - && git rebase develop"
 alias grm="git checkout master && git pull --rebase && git checkout - && git rebase master"
