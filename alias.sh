@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 alias buc="brew update && brew upgrade --greedy && brew cleanup && brew outdated"
-alias up="buc && softwareupdate --install --all && omz update"
+alias up="softwareupdate --install --all && omz update && buc"
 
 alias gc-="git checkout -"
 alias gl="git pull --rebase"
