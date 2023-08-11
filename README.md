@@ -10,6 +10,7 @@
 
 ```
 ln -s $HOME/git/dotfiles/.zshrc $HOME/.zshrc
+ln -s $HOME/git/dotfiles/init.vim $HOME/.config/nvim/init.vim
 ```
 
 # Install plugins
