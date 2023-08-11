@@ -59,12 +59,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(brew docker extract common-aliases git kubectl last-working-dir macos npm yarn z)
 
-# ! first install
-# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-# git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-# brew install fnm fzf
-
-plugins=(brew common-aliases fnm fzf git last-working-dir macos yarn z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(brew common-aliases fnm forklift fzf git jira last-working-dir macos node npm qrcode react-native rsync rust vscode yarn z zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 source $HOME/git/dotfiles/env.sh
