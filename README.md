@@ -10,7 +10,7 @@
 
 ```
 ln -s $HOME/git/dotfiles/.zshrc $HOME/.zshrc
-ln -s $HOME/git/dotfiles/init.vim $HOME/.config/nvim/init.vim
+ln -s $HOME/git/dotfiles/.vimrc $HOME/.vimrc
 ```
 
 # Install plugins
@@ -24,7 +24,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 
 ```
-brew install fnm fzf neovim rust
+brew install fnm fzf rust
 ```
 
 Then add to plugins
