@@ -61,9 +61,6 @@ HIST_STAMPS="dd.mm.yyyy"
 
 plugins=(ansible brew common-aliases fnm forklift fzf git jira last-working-dir macos node npm react-native rsync rust vscode yarn z zsh-autosuggestions zsh-syntax-highlighting)
 
-# User configuration
-source $HOME/git/dotfiles/env.sh
-
 source $ZSH/oh-my-zsh.sh
 
 # Aliases
@@ -76,3 +73,6 @@ source $HOME/git/dotfiles/alias.sh
 # Manage Node versions
 # autoswitch/install with fnm
 eval "$(fnm env --use-on-cd)"
+
+# User configuration
+source $HOME/git/dotfiles/env.sh
