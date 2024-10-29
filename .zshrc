@@ -11,9 +11,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="afowler"
 ZSH_THEME="daveverwer"
-
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -59,7 +57,11 @@ HIST_STAMPS="dd.mm.yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(brew docker extract common-aliases git kubectl last-working-dir macos npm yarn z)
 
-plugins=(ansible brew common-aliases fnm forklift fzf git jira last-working-dir macos node npm react-native rsync rust vscode yarn z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(ansible brew common-aliases fnm fzf git last-working-dir macos node npm rsync vscode yarn z zsh-autosuggestions zsh-syntax-highlighting)
+
+# User configuration
+export NODE_ENV=development
+source $HOME/git/dotfiles/env.sh
 
 source $ZSH/oh-my-zsh.sh
 
